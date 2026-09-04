@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đào tạo HUMG</title>
+    <style>
+        .body{
+            margin: 0px
+        }
+        .menu{
+            background-color: #2fa4e7;
+        }
+        .danh-sach-muc{
+            /* bỏ dấu chấm của list */
+            list-style: none;
+            margin: 0px;
+            display: flex;
+        }
+        .muc{
+            color:white;
+            padding: 15px
+            /* font-weight: bold; */
+        }
+
+        a{
+            color:white;
+            /* để bỏ gạch chân cửa thẻ a dùng text -decoration */
+            text-decoration: none;
+        }
+        main{
+            display: flex;
+        }
+        .khoi-trai{
+            background-color: blue;
+            width: 20%;
+            height: 500px
+        }
+        .khoi-phai{
+            background-color: green;
+            width: 80%;
+            height: 500px
+        }
+
+        .dang-nhap{
+            background-color: grey;
+            height: 200px
+        }
+        form{
+            width: 90%;
+
+        }
+    </style>
+</head>
+<body>
+    <!-- Thanh menu -->
+        <nav class="menu">
+            <ul class="danh-sach-muc">
+                <li class="muc"><a>Thực tập, Đồ án</a></li>
+                <li class="muc"><a>Thủ tục Một Cửa</a></li>
+                <li class="muc"><a>Một Cửa online</a></li>
+                <li class="muc"><a>E-Mail HUMG</a></li>
+            </ul>
+        </nav>
+        <!-- nội dung chính -->
+        <main>
+            <div class="khoi-trai"></div>
+            <div class="dang-nhap">
+                 <form action="">
+                    <p>Tài khoản</p>
+                    <input type="text">
+                    <p>Mật khẩu</p>
+                    <input type="password">
+                </form>
+            </div>
+            <div>
+
+            </div>
+            <div class="khoi-phai">Phải</div>
+        </main>
+</body>
+</html>
