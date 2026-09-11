@@ -42,7 +42,7 @@
             height: 90vh;
             /* vh hoặc px đều được */
             /* để vẽ viền dùng border: border sẽ có 3 tham số(độ dày-loại đường viền-màu sắc) */
-            border-right: 1px solid #2fa4e7;
+            border-right: 2px solid #2fa4e7;
         }
 
         p {
@@ -74,6 +74,7 @@
         }
         .thong-tin{
             margin-bottom: 10px;
+            color: grey;
         }
         button{
             width: 100%;
@@ -137,6 +138,15 @@
             color: #2fa4e7;
             text-decoration: none;
         }
+        .thong-tin-chu{
+            width: 50%;
+            margin-right: 20px;
+        }
+        .dong{
+            border-bottom: 1px solid grey;
+            display: flex;
+            justify-content: center;
+        }
         form {
             width: 90%;
         }
@@ -147,10 +157,10 @@
     <!-- Thanh menu -->
     <nav class="menu">
         <ul class="danh-sach-danh-muc">
-            <li class="muc"><a href="#">Thực tập, Đồ án</a></li>
-            <li class="muc"><a href="#">Thủ tục Một Cửa</a></li>
-            <li class="muc"><a href="#">Một Cửa online</a></li>
-            <li class="muc"><a href="#">E-Mail HUMG</a></li>
+            <li class="muc"><a href="#"><font face="arial"><b>Thực tập, Đồ án</b></font></a></li>
+            <li class="muc"><a href="#"><font face="arial"><b>Thủ tục Một Cửa</b></font></a></li>
+            <li class="muc"><a href="#"><font face="arial"><b>Một Cửa online</b></font></a></li>
+            <li class="muc"><a href="#"><font face="arial"><b>E-Mail HUMG</b></font></a></li>
         </ul>
     </nav>
     <!-- nội dung chính -->
@@ -160,11 +170,11 @@
             <div class="khoi-dang-nhap">
                 <form action="">
                     <div class="thong-tin">
-                        <p>Tài khoản</p>
+                        <p><font face="arial">Tài khoản</font></p>
                         <input type="text">
                     </div>
                     <div class="thong-tin">
-                        <p>Mật khẩu</p>
+                        <p><font face="arial">Mật khẩu</font></p>
                         <input type="password">
                     </div>
                      <div class="quen-mk">
@@ -183,40 +193,40 @@
             <!-- tin tức -->
              <div class="tin">
                <div class="tin-tren">
-                    <h3 class="tieu-de">Tin tức</h3>
-                    <p><a class="xem-tiep" href="">Xem tiếp</a></p>
+                    <h3 class="tieu-de"><font face="arial" size="3">Tin tức</font></h3>
+                    <p><a class="xem-tiep" href=""><font face="arial">Xem tiếp ></font></a></p>
                </div>
                <!-- danh sách tin tức-->
                <div class="danh-sach-tin">
-                  <div class="bai-viet">
-                    <div class="bai-viet-khoi-anh">
-                        <img src="../ảnh/no_img.png" alt="">
-                    </div>
-                    <div class="bai-viet-thoi-gian"><p>05/05/2026</p></div>
-                    <div><p>Về việc đăng ký khối lượng học tập học kỳ phụ năm học 2025-2026</p></div>
+                   <div class="bai-viet">
+                       <div class="bai-viet-khoi-anh">
+                           <img src="../ảnh/no_img.png" alt="">
+                       </div>
+                       <div class="bai-viet-thoi-gian"><p><font face="arial" color="grey">05/05/2026</font></p></div>
+                       <div><p><font face="arial">Về việc đăng ký khối lượng học tập học kỳ phụ năm học 2025-2026</font></p></div>
                   </div>
                   <div class="bai-viet">
-                        <div class="bai-viet-khoi-anh">
-                            <img src="../ảnh/no_img.png" alt="">
-                        </div>
-                        <div class="bai-viet-thoi-gian"><p>05/05/2026</p></div>
-                        <div><p>Về việc đăng ký khối lượng học tập học kỳ phụ năm học 2025-2026</p></div>
+                      <div class="bai-viet-khoi-anh">
+                          <img src="../ảnh/no_img.png" alt="">
+                      </div>
+                      <div class="bai-viet-thoi-gian"><p><font face="arial" color="grey">15/04/2026</font></p></div>
+                      <div><p><font face="arial">Về việc nghỉ học</font></p></div>
                   </div>
-                    <div class="bai-viet">
-                            <div class="bai-viet-khoi-anh">
-                                <img src="../ảnh/tin3.webp" alt="">
-                            </div>
-                            <div class="bai-viet-thoi-gian"><p>05/05/2026</p></div>
-                            <div><p>Về việc đăng ký khối lượng học tập học kỳ phụ năm học 2025-2026</p></div>
+                  <div class="bai-viet">
+                      <div class="bai-viet-khoi-anh">
+                          <img src="../ảnh/tin3.webp" alt="">
+                      </div>
+                      <div class="bai-viet-thoi-gian"><p><font face="arial" color="grey">05\24/09/2026</font></p></div>
+                      <div><p><font face="arial">Trường Đại học Mỏ - Địa chất đạt chứng nhận...</font></p></div>
+                  </div>
                </div>
-               
              </div>
 
              <!-- thông báo -->
              <div class="tin">
                 <div class="tin-tren">
-                    <h3 class="tieu-de">Thông báo</h3>
-                    <p><a class="xem-tiep" href="">Xem tiếp</a></p>
+                    <h3 class="tieu-de"><font face="arial" size="3">Thông báo</font></h3>
+                    <p><a class="xem-tiep" href=""><font face="arial">Xem tiếp > </font></a></p>
                 </div>
                 <!-- danh sách thông báo -->
                 <div class="danh-sach-tin">
@@ -224,15 +234,20 @@
                     <div class="bai-viet-khoi-anh">
                         <img src="../ảnh/thongbao1.webp" alt="">
                     </div>
-                    <div class="bai-viet-thoi-gian"><p>27/08/2026</p></div>
-                    <div><p>Về việc ghép lớp và mở lớp học kì 1 năm học 2025-2026</p></div>
+                    <div class="bai-viet-thoi-gian"><p><font face="arial" color="grey">27/08/2026</font></p></div>
+                    <div><p><font face="arial">Về việc ghép lớp và mở lớp học kì 1 năm học 2025-2026</font></p></div>
                   </div>
                   <div class="bai-viet">
                     <div class="bai-viet-khoi-anh">
                         <img src="../ảnh/thongbao2.jpg" alt="">
                     </div>
-                    <div class="bai-viet-thoi-gian"><p>24/08/2026</p></div>
-                    <div><p>Thông báo về việc nghỉ học nhân dịp Quốc khánh 2/9</p></div>
+                    <div class="bai-viet-thoi-gian"><p><font face="arial" color="grey">24/08/2026</font></p></div>
+                    <div><p><font face="arial">Thông báo về việc nghỉ học nhân dịp Quốc khánh 2/9</font></p></div>
+                  </div><hr>
+                  <div class="thong-tin-chu">
+                    <div class="dong"><p><font face="arial">Thông báo về việc thực tập tốt nghiệp/doanh nghiệp và Đồ án/khóa luận tốt nghiệp của sinh viên đợt 1A năm học 2026-2027</font></p></div>
+                    <div class="dong"><p><font face="arial">Về việc đăng ký khối lượng học tập học kỳ 1 năm học 2026-2027</font></p></div>
+                    <div class="dong"><p><font face="arial">Thông báo về việc kiểm tra điều kiện xét tốt nghiệp đợt 3 năm học 2025-2026 (Tháng 07/2026)</font></p></div>
                   </div>
                 </div>
              </div>
@@ -240,8 +255,8 @@
              <!-- hướng dẫn -->
              <div class="tin">
                 <div class="tin-tren">
-                    <h3 class="tieu-de">Hướng dẫn</h3>
-                    <p><a class="xem-tiep" href="">Xem tiếp</a></p>
+                    <h3 class="tieu-de"><font face="arial" size="3">Hướng dẫn</font></h3>
+                    <p><a class="xem-tiep" href=""><font face="arial">Xem tiếp ></font></a></p>
                 </div>
                 <!-- danh sách hướng dẫn -->
                 <div class="danh-sach-tin">
@@ -249,25 +264,28 @@
                     <div class="bai-viet-khoi-anh">
                         <img src="../ảnh/huongdan1.jpg" alt="">
                     </div>
-                    <div class="bai-viet-thoi-gian"><p>18/11/2025</p></div>
-                    <div><p>Hướng dân đăng ký khối lượng học tập tại trang web</p></div>
+                    <div class="bai-viet-thoi-gian"><p><font face="arial" color="grey">18/11/2025</font></p></div>
+                    <div><p><font face="arial">Hướng dân đăng ký khối lượng học tập tại trang web</font></p></div>
                   </div>
                   <div class="bai-viet">
                     <div class="bai-viet-khoi-anh">
                         <img src="../ảnh/huongdan2.webp" alt="">
                     </div>
-                    <div class="bai-viet-thoi-gian"><p>18/11/2025</p></div>
-                    <div><p>Hướng dẫn lấy lại mật khẩu trâng web</p></div>
+                    <div class="bai-viet-thoi-gian"><p><font face="arial" color="grey">18/11/2025</font></p></div>
+                    <div><p><font face="arial">Hướng dẫn lấy lại mật khẩu trâng web</font></p></div>
                   </div>
                 </div>
-                
+             </div>
+
+             <!-- cài đặt app mobile -->
+             <div class="tin">
+                <div class="tin-tren">
+                    <h3 class="tieu-de"><font face="arial" size="3">Cài đặt APP mobile</font></h3>
+                </div>
              </div>
         </div>
-        <!-- cài đặt app mobile -->
-        <div class="tin">
-                <div class="tin-tren">
-                    <h3 class="tieu-de">Cài đặt app mobile</h3>
-                </div>
+        
+         
     </main>
 </body>
 
