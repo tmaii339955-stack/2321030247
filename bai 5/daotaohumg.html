@@ -60,7 +60,7 @@
         .khoi-dang-nhap {
             /* background-color: red */
             width: 90%;
-            height: 300px;
+            height: 210px;
             /* nếu margin để auto sẽ căn đối tượng vào giữa */
             margin: 10px auto;
         }
@@ -90,6 +90,31 @@
         .dang-nhap-365{
             background-color: #0078D4;
         }
+        .khoi-trai-giua{
+            color: #2fa4e7;
+            height: 100px;
+        }
+        .thong-tin-trai-giua1{
+            background-color: rgb(200, 233, 249);
+            height: 30px;
+            margin: 0px;
+            display: flex;
+            align-items: center;
+        }
+        .thong-tin-trai-giua2{
+            display: flex;
+            align-items: center;
+            height: 30px;
+        }
+        .duong-ke-duoi{
+            border-bottom: 1px solid #2fa4e7;
+            margin: 15px;
+        }
+        .khoi-trai-duoi{
+            display: flex;
+            align-items: flex-end;
+            height: 370px;
+        }
         .khoi-phai{
             width: 80%;
             height: 90vh;
@@ -108,6 +133,7 @@
             display: flex;
             justify-content: space-between;
             padding: 10px;
+            color: rgb(73, 80, 87);
         }
         h3{
             margin: 0px;
@@ -117,6 +143,7 @@
             margin: auto;
             padding:10px;
             display: flex;
+            color: rgb(73, 80, 87);
         }
         .bai-viet{
             width: 25%;
@@ -128,6 +155,7 @@
         .bai-viet-thoi-gian{
             display: flex;
             justify-content: flex-end;
+            color: grey;
         }
         img{
             width:100%;
@@ -141,11 +169,15 @@
         .thong-tin-chu{
             width: 50%;
             margin-right: 20px;
+            list-style: none;
         }
-        .dong{
-            border-bottom: 1px solid grey;
-            display: flex;
-            justify-content: center;
+        ol{
+            list-style: none;
+            padding: 0;
+        }
+        ol li{
+            border-bottom: 1px solid #dedede;
+            padding: 10px;
         }
         form {
             width: 90%;
@@ -166,7 +198,6 @@
     <!-- nội dung chính -->
     <main>
         <div class="khoi-trai">
-
             <div class="khoi-dang-nhap">
                 <form action="">
                     <div class="thong-tin">
@@ -188,6 +219,23 @@
                     </div>
                 </form>
             </div>
+            <div class="khoi-trai-giua">
+                <div class="thong-tin-trai-giua1">
+                    <p><font face="arial">Trang chủ</font></p>
+                </div>
+                <div class="duong-ke-duoi"></div>
+                <div class="thong-tin-trai-giua2">
+                    <p><font face="arial">Khảo sát đánh giá</font></p>
+                </div>
+                <div class="duong-ke-duoi"></div>
+            </div>
+            <div class="khoi-trai-duoi">
+                <div class="bai-viet-khoi-anh">
+                    <img src="../ảnh/logo.webp" alt="">
+                </div>
+                <div><p><font face="arial" size="2">MOHN-V 2026.08F.29</font></p></div>
+                <div><p><font face="arial" size="2">Design by </font><font face="arial" color="#2fa4e7" size="2">aqtech.vn</font></p></div>
+            </div>
         </div>
         <div class="khoi-phai">
             <!-- tin tức -->
@@ -202,21 +250,21 @@
                        <div class="bai-viet-khoi-anh">
                            <img src="../ảnh/no_img.png" alt="">
                        </div>
-                       <div class="bai-viet-thoi-gian"><p><font face="arial" color="grey">05/05/2026</font></p></div>
+                       <div class="bai-viet-thoi-gian"><p><font face="arial">05/05/2026</font></p></div>
                        <div><p><font face="arial">Về việc đăng ký khối lượng học tập học kỳ phụ năm học 2025-2026</font></p></div>
                   </div>
                   <div class="bai-viet">
                       <div class="bai-viet-khoi-anh">
                           <img src="../ảnh/no_img.png" alt="">
                       </div>
-                      <div class="bai-viet-thoi-gian"><p><font face="arial" color="grey">15/04/2026</font></p></div>
+                      <div class="bai-viet-thoi-gian"><p><font face="arial">15/04/2026</font></p></div>
                       <div><p><font face="arial">Về việc nghỉ học</font></p></div>
                   </div>
                   <div class="bai-viet">
                       <div class="bai-viet-khoi-anh">
                           <img src="../ảnh/tin3.webp" alt="">
                       </div>
-                      <div class="bai-viet-thoi-gian"><p><font face="arial" color="grey">05\24/09/2026</font></p></div>
+                      <div class="bai-viet-thoi-gian"><p><font face="arial">05\24/09/2026</font></p></div>
                       <div><p><font face="arial">Trường Đại học Mỏ - Địa chất đạt chứng nhận...</font></p></div>
                   </div>
                </div>
@@ -234,20 +282,22 @@
                     <div class="bai-viet-khoi-anh">
                         <img src="../ảnh/thongbao1.webp" alt="">
                     </div>
-                    <div class="bai-viet-thoi-gian"><p><font face="arial" color="grey">27/08/2026</font></p></div>
+                    <div class="bai-viet-thoi-gian"><p><font face="arial">27/08/2026</font></p></div>
                     <div><p><font face="arial">Về việc ghép lớp và mở lớp học kì 1 năm học 2025-2026</font></p></div>
                   </div>
                   <div class="bai-viet">
                     <div class="bai-viet-khoi-anh">
                         <img src="../ảnh/thongbao2.jpg" alt="">
                     </div>
-                    <div class="bai-viet-thoi-gian"><p><font face="arial" color="grey">24/08/2026</font></p></div>
+                    <div class="bai-viet-thoi-gian"><p><font face="arial">24/08/2026</font></p></div>
                     <div><p><font face="arial">Thông báo về việc nghỉ học nhân dịp Quốc khánh 2/9</font></p></div>
                   </div><hr>
                   <div class="thong-tin-chu">
-                    <div class="dong"><p><font face="arial">Thông báo về việc thực tập tốt nghiệp/doanh nghiệp và Đồ án/khóa luận tốt nghiệp của sinh viên đợt 1A năm học 2026-2027</font></p></div>
-                    <div class="dong"><p><font face="arial">Về việc đăng ký khối lượng học tập học kỳ 1 năm học 2026-2027</font></p></div>
-                    <div class="dong"><p><font face="arial">Thông báo về việc kiểm tra điều kiện xét tốt nghiệp đợt 3 năm học 2025-2026 (Tháng 07/2026)</font></p></div>
+                    <ol>
+                       <li><font color="#2fa4e7">>> </font><font face="arial">Thông báo về việc thực tập tốt nghiệp/doanh nghiệp và Đồ án/khóa luận tốt nghiệp của sinh viên đợt 1A năm học 2026-2027</font></li>
+                       <li><font color="#2fa4e7">>> </font><font face="arial">Về việc đăng ký khối lượng học tập học kỳ 1 năm học 2026-2027</font></li>
+                       <li><font color="#2fa4e7">>> </font><font face="arial">Thông báo về việc kiểm tra điều kiện xét tốt nghiệp đợt 3 năm học 2025-2026 (Tháng 07/2026)</font></li>
+                    </ol>
                   </div>
                 </div>
              </div>
@@ -264,15 +314,15 @@
                     <div class="bai-viet-khoi-anh">
                         <img src="../ảnh/huongdan1.jpg" alt="">
                     </div>
-                    <div class="bai-viet-thoi-gian"><p><font face="arial" color="grey">18/11/2025</font></p></div>
+                    <div class="bai-viet-thoi-gian"><p><font face="arial">18/11/2025</font></p></div>
                     <div><p><font face="arial">Hướng dân đăng ký khối lượng học tập tại trang web</font></p></div>
                   </div>
                   <div class="bai-viet">
                     <div class="bai-viet-khoi-anh">
                         <img src="../ảnh/huongdan2.webp" alt="">
                     </div>
-                    <div class="bai-viet-thoi-gian"><p><font face="arial" color="grey">18/11/2025</font></p></div>
-                    <div><p><font face="arial">Hướng dẫn lấy lại mật khẩu trâng web</font></p></div>
+                    <div class="bai-viet-thoi-gian"><p><font face="arial">18/11/2025</font></p></div>
+                    <div><p><font face="arial">Hướng dẫn lấy lại mật khẩu trang web</font></p></div>
                   </div>
                 </div>
              </div>
