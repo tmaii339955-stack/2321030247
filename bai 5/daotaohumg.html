@@ -112,8 +112,15 @@
         }
         .khoi-trai-duoi{
             display: flex;
-            align-items: flex-end;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-end;
             height: 370px;
+            
+        }
+        .anh-logo{
+            width: 200px;
+            height: auto;
         }
         .khoi-phai{
             width: 80%;
@@ -168,7 +175,7 @@
         }
         .thong-tin-chu{
             width: 50%;
-            margin-right: 20px;
+            margin-right: 10px;
             list-style: none;
         }
         ol{
@@ -178,6 +185,18 @@
         ol li{
             border-bottom: 1px solid #dedede;
             padding: 10px;
+        }
+        .qr{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            gap: 600px;
+        }
+        .qr1{
+            width: 150px;
+        }
+        .qr2{
+            width: 150px;
         }
         form {
             width: 90%;
@@ -230,11 +249,11 @@
                 <div class="duong-ke-duoi"></div>
             </div>
             <div class="khoi-trai-duoi">
-                <div class="bai-viet-khoi-anh">
+                <div class="anh-logo">
                     <img src="../ảnh/logo.webp" alt="">
                 </div>
-                <div><p><font face="arial" size="2">MOHN-V 2026.08F.29</font></p></div>
-                <div><p><font face="arial" size="2">Design by </font><font face="arial" color="#2fa4e7" size="2">aqtech.vn</font></p></div>
+                 <p><font face="arial" size="2">MOHN-V 2026.08F.29</font></p>
+                 <p><font face="arial" size="2">Design by </font><font face="arial" color="#2fa4e7" size="2">aqtech.vn</font></p>
             </div>
         </div>
         <div class="khoi-phai">
@@ -294,9 +313,21 @@
                   </div><hr>
                   <div class="thong-tin-chu">
                     <ol>
-                       <li><font color="#2fa4e7">>> </font><font face="arial">Thông báo về việc thực tập tốt nghiệp/doanh nghiệp và Đồ án/khóa luận tốt nghiệp của sinh viên đợt 1A năm học 2026-2027</font></li>
-                       <li><font color="#2fa4e7">>> </font><font face="arial">Về việc đăng ký khối lượng học tập học kỳ 1 năm học 2026-2027</font></li>
-                       <li><font color="#2fa4e7">>> </font><font face="arial">Thông báo về việc kiểm tra điều kiện xét tốt nghiệp đợt 3 năm học 2025-2026 (Tháng 07/2026)</font></li>
+                       <li>
+                         <font color="#2fa4e7">>> </font>
+                         <font face="arial">Thông báo về việc thực tập tốt nghiệp/doanh nghiệp và Đồ án/khóa luận tốt nghiệp của sinh viên đợt 1A năm học 2026-2027</font>
+                         <div class="bai-viet-thoi-gian"><p><font face="arial">11/08/2026</font></p></div>
+                       </li>
+                       <li>
+                         <font color="#2fa4e7">>> </font>
+                         <font face="arial">Về việc đăng ký khối lượng học tập học kỳ 1 năm học 2026-2027</font>
+                         <div class="bai-viet-thoi-gian"><p><font face="arial">20/07/2026</font></p></div>
+                       </li>
+                       <li>
+                         <font color="#2fa4e7">>> </font>
+                         <font face="arial">Thông báo về việc kiểm tra điều kiện xét tốt nghiệp đợt 3 năm học 2025-2026 (Tháng 07/2026)</font>
+                         <div class="bai-viet-thoi-gian"><p><font face="arial">16/07/2026</font></p></div>
+                       </li>
                     </ol>
                   </div>
                 </div>
@@ -321,8 +352,27 @@
                     <div class="bai-viet-khoi-anh">
                         <img src="../ảnh/huongdan2.webp" alt="">
                     </div>
-                    <div class="bai-viet-thoi-gian"><p><font face="arial">18/11/2025</font></p></div>
+                    <div class="bai-viet-thoi-gian"><p><font face="arial">01/08/2023</font></p></div>
                     <div><p><font face="arial">Hướng dẫn lấy lại mật khẩu trang web</font></p></div>
+                  </div><hr>
+                  <div class="thong-tin-chu">
+                    <ol>
+                       <li>
+                         <font color="#2fa4e7">>> </font>
+                         <font face="arial">Hướng dẫn lấy lại mật khẩu e-mail HUMG</font>
+                         <div class="bai-viet-thoi-gian"><p><font face="arial">01/08/2023</font></p></div>
+                       </li>
+                       <li>
+                         <font color="#2fa4e7">>> </font>
+                         <font face="arial">Hướng dẫn đăng ký khối lượng học tập tại trang web daotaodaihoc.humg.edu.vn</font>
+                         <div class="bai-viet-thoi-gian"><p><font face="arial">19/12/2024</font></p></div>
+                       </li>
+                       <li>
+                         <font color="#2fa4e7">>> </font>
+                         <font face="arial">Hướng dẫn kiểm tra, tra cứu trực tuyến thông tin về bằng tốt nghiệp của trường Đại học Mỏ-Địa chất</font>
+                         <div class="bai-viet-thoi-gian"><p><font face="arial">11/05/2021</font></p>
+                       </li>
+                    </ol>
                   </div>
                 </div>
              </div>
@@ -332,7 +382,16 @@
                 <div class="tin-tren">
                     <h3 class="tieu-de"><font face="arial" size="3">Cài đặt APP mobile</font></h3>
                 </div>
-             </div>
+                <div class="danh-sach-tin">
+                  <div class="qr">
+                    <div class="qr1">
+                        <img src="../ảnh/qr1.png" alt="">
+                    </div>
+                    <div class="qr2">
+                        <img src="../ảnh/qr2.png" alt="">
+                    </div>
+                  </div>
+                </div>
         </div>
         
          
