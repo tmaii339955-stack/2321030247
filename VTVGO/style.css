@@ -1,0 +1,59 @@
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    align-items: center;
+    background-color: red;
+}
+
+.danh-sach-muc{
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    padding: 0;
+    background-color: red;
+}
+
+.logo{
+    width: 20%;
+}
+
+.banner{
+    width: 50%;
+    background-color: blue;
+    margin: 50px auto;
+
+}
+
+.banner-img{
+    width: 100%;
+    border-radius: 20px;
+}
+
+.avata{
+    width: 50px;
+    border-radius: 10px;
+}
+
+.kenh{
+    width: 90%;
+    height: 20vh;
+    background-color: red;
+    margin: 10px auto;
+}
+
+.danh-sach-kenh{
+    display: flex;
+    justify-content: space-between;
+}
+
+.ten-kenh{
+    width: 19%;
+    height: 20vh;
+    background-color: blue;
+
+    img{
+        width: 100%;
+        border-radius: 20px;
+    }
+}
