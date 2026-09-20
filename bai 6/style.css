@@ -59,7 +59,6 @@ header{
 
 .the-loai{
     width: 90%;
-    height: 20vh;
     /* background-color: red; */
     margin: 10px auto;
 }
@@ -71,7 +70,6 @@ header{
 
 .phim{
     width: 19%;
-    height: 20vh;
     /* background-color: blue; */
 
     img{
@@ -82,7 +80,6 @@ header{
 
 .nhan-vat{
     width: 19%;
-    height: 20vh;
     gap: 10px;
 
     img{

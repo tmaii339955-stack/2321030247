@@ -1,0 +1,119 @@
+.menu {
+    background-color: #2fa4e7;
+}
+
+.danh-sach-danh-muc {
+    list-style: none;
+    margin: 0px;
+    display: flex;
+    padding: 10px;
+    gap: 15px;
+}
+
+.muc {
+    color: white;
+    padding: 15px
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    display: flex;
+}
+
+.khoi-trai {
+    width: 20%;
+    height: 130vh;
+    margin: 0; 
+    border-right: 2px solid #2fa4e7;  
+}
+
+p{
+    margin: 0 15px;
+    height: 30px;
+    padding: 10px 12px 10px 8px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #2fa4e7;
+}
+
+.thoi-khoa-bieu{
+    background-color: #d8ebfc;
+    height: 30px;
+    margin: 0 0 0 15px;
+}
+
+.khoi-trai-tren{
+    width: 90%;
+    height: 120vh;
+}
+.khoi-trai-duoi{
+
+    height: 10vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.anh-logo{
+    width: 100px;
+    height: auto;
+}
+.thong-tin-trai-duoi{
+    border-bottom: none;
+}
+
+.khoi-phai{
+    width: 80%;
+    height: 90vh;
+}
+.tin{
+    width: 95%;
+    height: 100vh;
+    border: 1px solid #2fa4e7;
+    border-radius: 10px;
+    margin: 20px auto;
+}
+.tin-tren{
+    width: 95%;
+    margin: auto;
+    border-bottom: 1px solid #2fa4e7;
+    padding: 5px;
+    color: rgb(73, 80, 87);
+}
+h3{
+    margin: 5px 5px 0px;
+}
+
+.thong-tin{
+    padding: 15px;
+}
+
+.danh-sach-tin{
+    padding: 16px;
+}
+
+select{
+    font-size: 16px;
+    padding: 5px 10px;
+    height: auto;
+    border-radius: 5px;
+    border: 1px solid #c9c9c9;
+    color: rgb(73, 80, 87);
+}
+.tuan{
+    padding: 5px 0;
+}
+
+.thoi-khoa-bieu{
+    font-family: "arial";
+
+}
+table{
+    border-radius: 5px;
+    border: 1.5px solid #2fa4e7;
+}
