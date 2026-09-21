@@ -1,3 +1,6 @@
+body{
+    margin: 0;
+}
 .menu {
     background-color: #2fa4e7;
 }
@@ -6,8 +9,8 @@
     list-style: none;
     margin: 0px;
     display: flex;
-    padding: 10px;
     gap: 15px;
+    font-family: arial;
 }
 
 .muc {
@@ -28,22 +31,27 @@ main {
     width: 20%;
     height: 130vh;
     margin: 0; 
-    border-right: 2px solid #2fa4e7;  
+    border-right: 2px solid #2fa4e7;
 }
 
 p{
-    margin: 0 15px;
+    margin: 0;
     height: 30px;
     padding: 10px 12px 10px 8px;
     display: flex;
     align-items: center;
-    border-bottom: 1px solid #2fa4e7;
+    border-bottom: 1.5px solid #b0d7ed;
 }
 
-.thoi-khoa-bieu{
+.thong-tin-khoi-trai{
+    font-family: arial;
+    color:#2fa4e7;
+}
+
+.thoi-khoa-bieu-tuan{
     background-color: #d8ebfc;
     height: 30px;
-    margin: 0 0 0 15px;
+    margin: 0 -29px 0 0;
 }
 
 .khoi-trai-tren{
@@ -101,7 +109,7 @@ select{
     font-size: 16px;
     padding: 5px 10px;
     height: auto;
-    border-radius: 5px;
+    border-radius: 7px;
     border: 1px solid #c9c9c9;
     color: rgb(73, 80, 87);
 }
@@ -109,11 +117,34 @@ select{
     padding: 5px 0;
 }
 
-.thoi-khoa-bieu{
+.thong-tin-thoi-khoa-bieu{
     font-family: "arial";
-
+    font-size: 14px;
 }
 table{
     border-radius: 5px;
     border: 1.5px solid #2fa4e7;
+    width: 100%;
+}
+
+.tiet{
+    background-color:#2fa4e7;
+    color: white;
+}
+.gio{
+    background-color:#2fa4e7;
+    color: white;
+}
+td{
+    border: 1px solid #dedede;
+    width: 12px;
+    padding: 10px;
+}
+th{
+    border: 1px solid #dedede;
+    width: 12px;
+    padding: 10px;
+}
+.tkb{
+    border: 1px solid #2a90cb;
 }
