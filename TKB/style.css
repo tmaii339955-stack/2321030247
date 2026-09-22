@@ -68,9 +68,14 @@ p{
 }
 
 .anh-logo{
-    width: 100px;
+    width: 100%;
     height: auto;
 }
+img{
+    width: 200px;
+    margin: 0 20px;
+}
+
 .thong-tin-trai-duoi{
     border-bottom: none;
 }
@@ -81,7 +86,7 @@ p{
 }
 .tin{
     width: 95%;
-    height: 100vh;
+    height: 147vh;
     border: 1px solid #2fa4e7;
     border-radius: 10px;
     margin: 20px auto;
@@ -147,4 +152,13 @@ th{
 }
 .tkb{
     border: 1px solid #2a90cb;
+}
+
+.mon-hoc{
+    background-color: #cfe2ff;
+    border:1px solid #2fa4e7;
+}
+
+hr{
+    border:0.5px solid #2fa4e7;
 }
