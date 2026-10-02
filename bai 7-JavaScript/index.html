@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 7 - JS</title>
+</head>
+<body>
+    <!-- internal JavaScript -->
+    <script>
+        // có thể thêm mã nguồn mở html vào trong JS
+        // lưu ý: html phải đặt trong dấu ""
+        document.writeln("Hello <br> World!");
+
+        var tenSinhVien = "Tuyet Mai";
+        // chữ thì để trong dấu ""
+        var tuoi = 21;
+        // tuổi thì không để trong dấu ""
+        document.writeln(tenSinhVien + "<br>" + tuoi + "<br>");
+
+        var soThuNhat = 10;
+        var soThuHai = 5;
+        // + - * / 
+        // % chia lấy dư
+        var ketQua = soThuNhat + soThuHai;
+        document.writeln("Kết quả là " + ketQua + "<br>");
+        var ketQua = soThuNhat - soThuHai;
+        document.writeln("Kết quả là " + ketQua + "<br>");
+        var ketQua = soThuNhat * soThuHai;
+        document.writeln("Kết quả là " + ketQua + "<br>");
+        var ketQua = soThuNhat / soThuHai;
+        document.writeln("Kết quả là " + ketQua + "<br>");
+        var ketQua = soThuNhat % soThuHai;
+        document.writeln("Kết quả là " + ketQua + "<br>");
+
+        // ++ -- 
+        document.writeln(++soThuNhat + "<br>");
+        document.writeln(--soThuNhat + "<br>");
+
+        // += -= *= /= %/
+        // tương đương: số thứ nhất= số thứ nhất + - * / % số thứ hai
+        soThuNhat+=soThuHai;
+        document.writeln(soThuNhat + "<br>");
+
+        // kiểu dữ liệu: string (chữ) number (số)
+        // boolean (true/false)
+
+        var a = "10";
+        var b = 5.5;
+        // chuyển string => number dùng parseInt(); số nguyên => parseInt() ; số thực => parseFloat()
+        var tong = parseInt(a) + parseFloat(b);
+        document.writeln(tong);
+  
+        // string
+        document.writeln("<br>");
+        // kiểm tra độ dài của chuỗi dùng length
+        document.writeln(tenSinhVien.length);
+        // kiểm tra tồn tại: indexof tìm vị trí xuất hiện đầu tiên (có - vị trí / k có -1)
+        document.writeln("<br>");
+        document.writeln(tenSinhVien.indexOf("u") + "<br>"); // chữ đầu tiên đều là 0 sau đến 1234... nên chữ u trong tên là 1
+        document.writeln(tenSinhVien.indexOf("o") + "<br>"); // chữ o không có trong tên nên sẽ ra -1
+
+        // includes kiểm tra tồn tại: có - true / k có - false
+        document.writeln(tenSinhVien.includes("u") + "<br>"); // u có nên ra true
+        document.writeln(tenSinhVien.includes("o") + "<br>"); // o k có nên ra false
+
+        // replace thay thế: replace("chuỗi cũ", "chuỗi mới")
+        document.writeln(tenSinhVien.replace("Tuyet", "Phuong") + "<br>"); // thay Tuyet thành Mai
+        tenSinhVien = tenSinhVien.replace("Tuyet", "Phuong");
+        document.writeln(tenSinhVien + "<br>"); // in ra tên mới là Phuong Mai
+
+        // kiểm tra kí tự bắt đầu và kết thúc: startsWith / endsWith
+        document.writeln(tenSinhVien.startsWith("Tuyet") + "<br>"); // tên bắt đầu bằng Tuyet nên ra true, còn khi in ra tên mới là Phuong Mai thì sẽ ra false
+        document.writeln(tenSinhVien.endsWith("Mai") + "<br>"); // tên kết thúc bằng Mai nên ra true
+
+        // viết in hoa
+        document.writeln("<br>");
+        document.writeln(tenSinhVien.toUpperCase() + "<br>"); // in hoa
+        document.writeln(tenSinhVien.toLowerCase() + "<br>"); // in thường
+
+        //number kiểm tra số: isNaN() - true là k phải số / false là số
+        document.writeln("<br>");
+        document.writeln(isNaN("abc") + "<br>"); // true là k phải số / false là số
+ 
+        // date 
+        var homNay = new Date();
+        document.writeln("<br>");
+        document.writeln(homNay);
+
+        // khai báo ngày cụ thể định dạng tháng/ngày/năm
+        var ngay = new Date("10/20/2026");
+        document.writeln("<br>");
+        document.writeln(ngay);
+
+        // khai báo ngày cụ thể định dạng năm/tháng/ngày
+        var nam = homNay.getFullYear();
+        document.writeln("<br>");
+        document.writeln(nam);
+        var thang = homNay.getMonth() + 1; // tháng bắt đầu từ 0 nên phải +1
+        document.writeln("<br>");
+        document.writeln(thang);
+        var ngay = homNay.getDate();
+        document.writeln("<br>");
+        document.writeln(ngay);
+        var thu = homNay.getDay() + 1; // thứ bắt đầu từ 0 nên phải +1
+        document.writeln("<br>");
+        document.writeln(thu);
+
+        var namSinhMai = nam - tuoi;
+        document.writeln("<br>");
+        document.writeln("Mai sinh nam " + namSinhMai);
+
+        // mảng(array)
+        var mangSo = [1, 2, 3, 4, 5]; // số đầu tiên là 0, số thứ hai là 1, số thứ ba là 2, số thứ tư là 3, số thứ năm là 4
+        var mangTen = ["Tuyet", "Mai", "Phuong"];
+        var thongTin = ["Tuyet", 21,false];
+
+        document.writeln("<br>");
+        document.writeln(mangSo[0] + "<br>"); // in ra số đầu tiên là 1
+        document.writeln(mangTen[1] + "<br>"); // in ra tên thứ hai là Mai
+        document.writeln(thongTin[0] + "<br>"); // in ra tên đầu tiên là Tuyet
+
+        // kiểm tra độ dài mảng length
+        document.writeln(mangSo.length + "<br>"); // in ra độ dài mảng là 5
+        document.writeln(mangTen.length + "<br>"); // in ra độ dài mảng là 3
+        document.writeln(thongTin.length + "<br>"); // in ra độ dài mảng là 3
+
+        // gộp mảng concat
+        var mang = mangSo.concat(mangTen, thongTin); // nối mảng
+        document.writeln(mang + "<br>"); // in ra mảng mới là 1,2,3,4,5,Tuyet,Mai,Phuong,Tuyet,21,false
+        // join
+        document.writeln(mangSo.join("-") + "<br>");
+        // pop lấy ra số cuối cùng
+        document.writeln(mangSo.pop() + "<br>"); // lấy cuối cùng của mảng là 5
+        // push thêm số vào cuối mảng
+        mangSo.push(6);
+        document.writeln(mangSo + "<br>"); // in ra mảng sau khi thêm số 6 và mất số 5 vì ở trên lấy 5 ra khỏi mảng
+        // reverse đảo ngược mảng
+        document.writeln(mangSo.reverse() + "<br>"); // in ra mảng
+
+        //== so sánh bằng nhau
+        document.writeln("<br>");
+        document.writeln(soThuNhat); //kieemr tra soThuNhat hien tai la bao nhieu
+        document.writeln(soThuNhat == soThuHai); // false vì 15>5
+        //!= so sánh khác nhau
+        document.writeln(soThuNhat != soThuHai); // true vì 15 != 5
+        //> so sánh lớn hơn
+        document.writeln(soThuNhat > soThuHai); // true vì 15 > 5
+        //>= so sánh lớn hơn hoặc bằng
+        document.writeln(soThuNhat >= soThuHai); // true vì 15 >= 5
+        //< so sánh nhỏ hơn
+        document.writeln(soThuNhat < soThuHai); // false vì 15 < 5
+        //<= so sánh nhỏ hơn hoặc bằng
+        document.writeln(soThuNhat <= 14); // false vì 15 <= 14
+
+        // && và
+        // true && true = true
+        // true && false = false
+        // false && false = false
+        var c = 10;
+        var d = 5.5;
+        document.writeln("<br>");   
+        document.writeln((soThuNhat > soThuHai) && (c < d)); // false vì 15 > 5 và 10 > 5.5
+        // || hoặc
+        // true || true = true
+        // true || false = true
+        // false || false = false
+        document.writeln("<br>");
+        document.writeln((soThuNhat > soThuHai) || (c < d)); // true vì 15 > 5 hoặc 10 < 5.5
+
+        //var thu = homNay.getDay() + 1;
+        document.writeln(thu);
+        if(thu == 0){
+            document.writeln("Hôm nay là chu nhat");
+        }
+        else if(thu == 5){
+            document.writeln("Hôm nay là thứ 5");
+        }
+        else{
+            document.writeln("Hôm nay không phải là chu nhat");
+        }
+
+        var diem = 8;
+        document.writeln("<br>");
+        if(diem <4){
+            document.writeln("không qua môn");
+        }
+        else if(diem >= 0 && diem < 5){
+            document.writeln("F");
+        }
+        else if(diem >=5 && diem < 6){
+            document.writeln("D");
+        }
+        else if(diem >=6 && diem < 7){
+            document.writeln("C");
+        }
+        else if(diem >=7 && diem < 8){
+            document.writeln("B");
+        }
+        else if(diem >=8 && diem <= 10){
+            document.writeln("A");
+        }
+        else{
+            document.writeln("kh qua mon");
+        }
+    </script>
+
+    <!-- external JS -->
+    <!-- <script src="script.js"></script> -->
+</body>
+</html>
