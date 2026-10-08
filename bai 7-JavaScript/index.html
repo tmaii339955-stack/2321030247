@@ -203,6 +203,64 @@
         else{
             document.writeln("diem khong hop le");
         }
+
+        // object var name = { }
+        var sinhVien = {
+            hoTen: "Do Thi Tuyet Mai",
+            tuoi: 21,
+            gioiTinh: true, // true là nữ / false là nam
+            diaChi:{
+                thanhPho: "Ha Noi",
+                huyen: "Dong Anh",
+                xa: "Vinh Thanh"
+            }
+        }; 
+
+        var thongTinPhim = {
+            ten: "Lo Lem",
+            quocGia: "Hoa Ky",
+            daoDien: "Kenneth Branagh",
+            dienVien: {
+                dienVienChinh: ["Cate Blanchett", "Lily James", "Richard Madden", "Stellan Skarsgård"],
+                dienVienPhu: ["Holliday Grainger", "Ben Chaplin", "Hayley Atwell"]
+            },  
+            namPhatHanh: 2015,
+            theLoai: "Romantic"
+        }
+
+        document.writeln("<br>");
+        document.write(thongTinPhim.dienVien.dienVienChinh[0] + "<br>");
+
+        // switch case
+        var d = new Date();
+        var theDay = d.getDay();
+        switch(theDay){
+            case 5:
+                document.writeln("Finally Friday"); //neu theDay = 5 thi se in ra Finally Friday
+                break;
+            case 6:
+                document.writeln("Super Saturday"); //neu theDay = 6 thi se in ra Super Saturday
+                break;
+            case 0:
+                document.writeln("Sleepy Sunday"); //neu theDay = 0 thi se in ra Sleepy Sunday
+                break;
+            default:
+                document.writeln("I'm looking forward to this Weekend"); //neu theDay khac 5,6,0 thi se in ra I'm looking forward to this Weekend
+        }
+
+        for (var index = 0; index <= 3; index++){
+            document.writeln("<br> Xin chao!" + index + "<br>"); 
+        }
+
+        var danhSachSinhVien = ["Thuy", "Mai", "Tuan", "Thang", "Thao"];
+        document.writeln("<br> Xin chao " + danhSachSinhVien[0]); 
+        for (var index = 0; index < danhSachSinhVien.length; index++){
+            // document.writeln("<br>" + index + "<br>");
+            // document.writeln("Xin chao " + danhSachSinhVien[index]);   
+            if(danhSachSinhVien[0] == "Thuy" || danhSachSinhVien[2] == "Tuan"){
+                document.writeln("Xin chao" + danhSachSinhVien[0] + "<br>");
+            }
+        }
     </script>
 
     <!-- external JS -->
