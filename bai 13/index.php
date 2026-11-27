@@ -34,6 +34,12 @@
                 case "theloai":
                     include("theloai.php");
                     break;
+                case "themmoitaikhoan":
+                    include("themmoitaikhoan.php");
+                    break;
+                case "xoataikhoan":
+                    include("xoataikhoan.php");
+                    break;
                 case "dangxuat":
                     session_destroy();
                     header('location: dangnhap.php');
